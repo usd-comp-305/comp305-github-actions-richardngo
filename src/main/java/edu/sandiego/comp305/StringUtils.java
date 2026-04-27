@@ -1,8 +1,9 @@
 package edu.sandiego.comp305;
 
 public class StringUtils {
-    private StringUtils() {
 
+    private StringUtils() {
+        //code
     }
 
     public static String reverseString(final String originalString) {
