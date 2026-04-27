@@ -9,27 +9,27 @@ public class StringUtilsTests {
 
     @BeforeEach
     void initialize(){
-        StringUtils tool = new StringUtils();
+        tool = new StringUtils();
     }
 
     @Test
     void reverseString_emptyString(){
         String originalString = "";
-        String reversedString = tool.reverseString("originalString");
+        String reversedString = tool.reverseString(originalString);
         assertEquals(originalString, reversedString);
     }
 
     @Test
     void reverseString_singleLetter(){
         String originalString = "a";
-        String reversedString = tool.reverseString("originalString");
+        String reversedString = tool.reverseString(originalString);
         assertEquals(originalString, reversedString);
     }
 
     @Test
     void reverseString_twoLetter(){
         String originalString = "ab";
-        String reversedString = tool.reverseString("originalString");
+        String reversedString = tool.reverseString(originalString);
         String expectedString = "ba";
         assertEquals(expectedString, reversedString);
     }
@@ -37,7 +37,7 @@ public class StringUtilsTests {
     @Test
     void reverseString_threeLetter(){
         String originalString = "abc";
-        String reversedString = tool.reverseString("originalString");
+        String reversedString = tool.reverseString(originalString);
         String expectedString = "cba";
         assertEquals(expectedString, reversedString);
     }
