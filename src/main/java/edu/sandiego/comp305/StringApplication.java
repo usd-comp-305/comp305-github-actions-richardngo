@@ -6,7 +6,7 @@ public final class StringApplication {
         //code
     }
 
-    public StringApplication(final String[] args) {
+    public static void main(final String[] args) {
         final String message = "Example output for StringUtils demo";
 
         System.out.println(message);
