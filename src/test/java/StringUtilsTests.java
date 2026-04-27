@@ -14,31 +14,35 @@ public class StringUtilsTests {
 
     @Test
     void reverseString_emptyString(){
-        String originalString = "";
-        String reversedString = tool.reverseString(originalString);
+        final String originalString = "";
+        final String reversedString = tool.reverseString(originalString);
+
         assertEquals(originalString, reversedString);
     }
 
     @Test
     void reverseString_singleLetter(){
-        String originalString = "a";
-        String reversedString = tool.reverseString(originalString);
+        final String originalString = "a";
+        final String reversedString = tool.reverseString(originalString);
+
         assertEquals(originalString, reversedString);
     }
 
     @Test
     void reverseString_twoLetter(){
-        String originalString = "ab";
-        String reversedString = tool.reverseString(originalString);
-        String expectedString = "ba";
+        final String originalString = "ab";
+        final String reversedString = tool.reverseString(originalString);
+        final String expectedString = "ba";
+
         assertEquals(expectedString, reversedString);
     }
 
     @Test
     void reverseString_threeLetter(){
-        String originalString = "abc";
-        String reversedString = tool.reverseString(originalString);
-        String expectedString = "cba";
+        final String originalString = "abc";
+        final String reversedString = tool.reverseString(originalString);
+        final String expectedString = "cba";
+
         assertEquals(expectedString, reversedString);
     }
 

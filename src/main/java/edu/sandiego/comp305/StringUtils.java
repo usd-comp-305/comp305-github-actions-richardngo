@@ -1,7 +1,7 @@
 package edu.sandiego.comp305;
 
 public class StringUtils {
-    public String reverseString(final String originalString) {
+    public static String reverseString(final String originalString) {
 
         if (originalString.isEmpty()) {
             return "";
