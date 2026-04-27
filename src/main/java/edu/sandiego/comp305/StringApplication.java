@@ -3,6 +3,7 @@ package edu.sandiego.comp305;
 public final class StringApplication {
 
     private StringApplication() {
+
     }
 
     public StringApplication(final String[] args) {
