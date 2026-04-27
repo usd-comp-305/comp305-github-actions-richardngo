@@ -1,10 +1,12 @@
 package edu.sandiego.comp305;
 
 public class StringUtils {
+    private StringUtils() {}
+
     public static String reverseString(final String originalString) {
 
-        if (originalString.isEmpty()) {
-            return "";
+        if (originalString == null || originalString.length() < 2) {
+            return originalString;
         }
 
         final char[] characters = originalString.toCharArray();
